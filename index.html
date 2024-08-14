@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=”utf-8” name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio</title>
+  <link href="style.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preload" href="images/background.jpg" as="image"/> 
+</head>
+<body>
+
+    <div class="left-side">
+      <div class="header">
+        <div class="inner">
+          <img class="avatar" src="images/pilt.jpg" alt="">
+          <h1>Tõnis Põld</h1>
+          <h2>Bachelor of Science in Engineering</h2>
+        </div>
+        <div class="footer">
+          <div class="icons">
+            <a href="https://www.linkedin.com/in/t%C3%B5nis-p%C3%B5ld-055833226/" target="_blank" class="icon fa fa-linkedin"><span class="label"></span></a>
+            <a href="https://github.com/tonispold" target="_blank" class="icon fa fa-github"><span class="label"></span></a>
+            <a href="mailto:poldtonis@gmail.com" class="icon fa fa-envelope"><span class="label"></span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="right-side">
+      <div class="main">
+
+        <div class="first">
+          <h1>About</h1>
+          <div class="about">
+            <p style="text-align: justify;">Hi! My name is Tõnis Põld and I am a bachelor of science in engineering at Tallinna Ülikool who is looking for job opportunities to kickstart my career.
+              I am born and raised in Rakvere and for the past couple of years I've lived in Tallinn. I am a sports enthusiast who mainly plays football, tennis, discgolf and in the winter I ski.
+              <br>
+              <br>
+              My love for web development comes from the need to create something for other people to use.
+              As of lately, I've graduated university and have independently started to learn more about web development, graphical design and software programming. Now, I'd like to put my skills to real use.
+            </p>
+            <img class="about-image" src="images/lopetamine.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="second">
+          <h1 style="padding-bottom: 30px;">Portfolio</h1>
+          <div class="portfolio">
+            <div class="grid-item">
+              <a href="banner/banner.html" target="_blank">
+                <img src="images/portfolio_banner.gif">
+                <h3>HTML5 Banners</h3>
+              </a>
+              <p><span id="dots-first"></span><span id="more-first">Such banners i developed during my internship at häk digital marketing agency. The banners and the animations were different depending on the campaign.
+                These banners were developed with HTML, Sass and Javascript.</span></p>
+              <button onclick="readMoreFirst()" id="firstBtn" class="button">Read more</button>
+            </div>
+            <div class="grid-item">
+              <a href="https://www.figma.com/design/ew13YTJyvRoCiCItFMTF19/L%C3%B5put%C3%B6%C3%B6-protot%C3%BC%C3%BCp?node-id=0-1&t=lMi9n6R9sSNwdSu3-1" target="_blank">
+                <img src="images/portfolio_meie.gif">
+                <h3>Retail company Meie toidukaubad websites rebranding</h3>
+              </a>
+              <p><span id="dots-second"></span><span id="more-second">This rebranding was done as my bachelors thesis. I am associated with one of the owners of this company and I knew they didn't want anyting flashy and new.
+                Bearing that in mind I tried not to do a total rebranding, but rather a refresh to the website. This has not gone live and was done only for my bachelors thesis. Everything was done in Figma.</span></p>
+              <button onclick="readMoreSecond()" id="secondBtn" class="button">Read more</button>
+            </div>
+            <div class="grid-item">
+              <a href="game/game.html" target="_blank">
+                <img src="images/portfolio_game.gif">
+                <h3>Fox and hounds minimax boardgame</h3>
+              </a>
+              <p><span id="dots-third"></span><span id="more-third">This game was made during my studies at Tallinna Ülikool. This game uses a minimax algorithm and the player plays against an AI. It was done with HTML, CSS and Javascript.</span></p>
+              <button onclick="readMoreThird()" id="thirdBtn" class="button">Read more</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="third">
+          <h1 style="padding: 30px 0px 30px 0px">Skills</h1>
+          <div class="skills">
+            <p style="text-align: justify;">During my studies I have learned about many different coding languages, algorithms, softwares, databases and so on. Some, which I have learned more than the others, I've brought out in the picture beside.
+              I am also fluent in both Estonian and English. I have strong communication skills and I am a quick learner.
+            </p>
+            <img src="images/skills.png">
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
