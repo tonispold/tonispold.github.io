@@ -71,6 +71,11 @@ body {
     color: rgba(255, 255, 255, 0.5);
 }
 
+.icon:hover {
+    scale: 1.1;
+    filter: drop-shadow(0 0 0.35rem white);
+}
+
 .fa {
     font-size: 30px !important;
 }
@@ -173,6 +178,7 @@ a:link {
 .grid-item img:hover {
     scale: 1.1;
     filter: brightness(100%);
+    filter: drop-shadow(0 0 0.35rem white);
 }
 
 .skills {
