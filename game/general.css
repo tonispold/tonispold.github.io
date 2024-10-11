@@ -1,0 +1,54 @@
+body {
+    font-size: 16px;
+    background-color: #eee;
+}
+
+main {
+    display: flex;
+    margin-top: 80px;
+    justify-content: space-around;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+#board {
+    line-height: 0;
+    border: 8px solid #784a4a;
+    white-space: nowrap;
+    color: #fff;
+    height: 100%;
+}
+#animals {
+    position: absolute;
+}
+.animal {
+    position: absolute;
+}
+.animal > span {
+    padding: 8px;
+}
+.black-square {
+    width: 64px;
+    height: 64px;
+    background-color: #784a4a;
+    display: inline-block;
+    margin: 0;
+}
+.white-square {
+    width: 64px;
+    height: 64px;
+    background-color: #f5f5dc;
+    display: inline-block;
+    margin: 0;
+}
+.fox {
+    width: 64px;
+    height: 64px;
+    background: #ffa500;
+}
+
+.hound {
+    width: 64px;
+    height: 64px;
+    background: #c03535;
+}

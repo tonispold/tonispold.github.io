@@ -1,0 +1,211 @@
+
+*, body,
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    max-height: 300px;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+
+.banner-wrapper {
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    max-height: 250px;
+    height: 100vh;
+    margin: auto;
+    background-image: url(images/image_first.jpg);
+    animation: changeImage 15s infinite;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.banner-inner {
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 300px;
+    width: 100%;
+    max-height: 250px;
+    height: 100vh;
+    margin: auto;
+    position: relative;
+}
+
+.miimo {
+    position: absolute;
+    left: 4%;
+    top: 13%;
+    animation: displaySlogan 15s infinite;
+}
+
+.miimo-text {
+    position: absolute;
+    left: 4%;
+    top: 32%;
+    animation: displaySloganText 15s infinite;
+}
+
+.miimo-orb {
+    position: absolute;
+    right: 1%;
+    top: 10%;
+    animation: upAndDown 15s infinite linear;
+}
+
+.logo {
+    position: absolute;
+    right: 4%;
+}
+
+.text {
+    position: absolute;
+    left: 4%;
+    bottom: 3.5%;
+    animation: fadeOut 15s infinite;
+}
+
+.text-vector {
+    position: absolute;
+    left: 54%;
+    bottom: 4.7%;
+    animation: leftAndRight 15s infinite;
+}
+
+.text-second {
+    position: absolute;
+    left: 4%;
+    bottom: 5%;
+    animation: fadeIn 15s infinite;
+}
+
+.text-vector-second {
+    position: absolute;
+    left: 44%;
+    bottom: 4.6%;
+    animation: leftAndRightSecond 15s infinite;
+}
+
+.slogan {
+    position: absolute;
+    left: 4%;
+    top: 5%;
+    animation: displaySloganSecond 15s infinite;
+}
+
+.slogan-text {
+    position: absolute;
+    left: 4%;
+    top: 12%;
+    animation: displaySloganTextSecond 15s infinite linear;
+}
+
+
+
+@keyframes changeImage {
+    0% {background-image: url(images/image_first.jpg);}
+    45% {background-image: url(images/image_first.jpg);}
+    50% {background-image: url(images/image_second.jpg);}
+    100% {background-image: url(images/image_second.jpg);}
+}
+
+@keyframes displaySlogan {
+    0% {opacity: 0}
+    8% {opacity: 1}
+    45% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 0}
+}
+
+@keyframes displaySloganText {
+    0% {opacity: 0}
+    6% {opacity: 0}
+    12% {opacity: 1}
+    45% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 0}
+}
+
+@keyframes upAndDown {
+    0% {transform: translateY(-5px)}
+    10% {transform: translateY(5px)}
+    20% {transform: translateY(-5px)}
+    30% {transform: translateY(5px)}
+    40% {transform: translateY(-5px)}
+    45% {transform: translateY(2.5px)}
+    45% {opacity: 1}
+    47% {opacity: 0}
+    100% {opacity: 0}
+}
+
+@keyframes fadeOut {
+    0% {opacity: 1}
+    45% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 0}
+}
+
+@keyframes leftAndRight {
+    0% {}
+    3% {transform: translateX(3px)}
+    8% {transform: translateX(-3px)}
+    13% {transform: translateX(-3px)}
+    16% {transform: translateX(3px)}
+    21% {transform: translateX(-3px)}
+    26% {transform: translateX(-3px)}
+    29% {transform: translateX(3px)}
+    34% {transform: translateX(-3px)}
+    39% {transform: translateX(-3px)}
+    42% {transform: translateX(3px)}
+    47% {transform: translateX(-3px)}
+    45% {opacity: 1}
+    50% {opacity: 0}
+    100% {opacity: 0}
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0}
+    47% {opacity: 0}
+    50% {opacity: 1}
+    100% {opacity: 1}
+}
+
+@keyframes leftAndRightSecond {
+    0% {opacity: 0}
+    47% {opacity: 0}
+    50% {opacity: 1; transform: translateX(0px)}
+    53% {transform: translateX(3px)}
+    58% {transform: translateX(-3px)}
+    63% {transform: translateX(-3px)}
+    66% {transform: translateX(3px)}
+    71% {transform: translateX(-3px)}
+    76% {transform: translateX(-3px)}
+    79% {transform: translateX(3px)}
+    84% {transform: translateX(-3px)}
+    89% {transform: translateX(-3px)}
+    92% {transform: translateX(3px)}
+    97% {transform: translateX(-3px)}
+    100% {opacity: 1; transform: translateX(-3px)}
+}
+
+@keyframes displaySloganSecond {
+    0% {opacity: 0}
+    50% {opacity: 0}
+    55% {opacity: 1}
+    100% {opacity: 1}
+}
+
+@keyframes displaySloganTextSecond {
+    0% {opacity: 0; transform: translateY(-40px)}
+    57% {opacity: 0; transform: translateY(-40px)}
+    58% {opacity: 1; transform: translateY(-10px)}
+    60% {opacity: 1; transform: translateY(0px)}
+    100% {opacity: 1; transform: translateY(0px)}
+}

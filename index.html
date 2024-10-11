@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset=”utf-8” name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tonis Pold</title>
+  <link href="style.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="preload" href="images/background.jpg" as="image"/> 
+</head>
+<body>
+
+    <div id="hero" class="hero">
+        <div class="hero-text-box">
+            <h1>TÕNIS PÕLD</h1>
+            <p style="color: white;">Bachelor of Science in Engineering</p>
+            <i class="fa fa-arrow-down"></i>
+        </div>
+    </div>
+
+    <div class="content">
+
+        <nav id="nav" class="nav">
+            <a class="nav-item active" onclick="sectionChange(this)" href="#about">ABOUT</a>
+            <a class="nav-item" onclick="sectionChange(this)" href="#portfolio">PORTFOLIO</a>
+            <a class="nav-item" onclick="sectionChange(this)" href="#skills">SKILLS</a>
+            <ul class="icons">
+                <li><a href="https://www.linkedin.com/in/t%C3%B5nis-p%C3%B5ld-055833226/" target="_blank" class="icon fa fa-linkedin"></a></li>
+                <li><a href="https://github.com/tonispold" target="_blank" class="icon fa fa-github"></a></li>
+                <li><a href="mailto:poldtonis@gmail.com" class="icon fa fa-envelope"></span></a></li>
+            </ul>
+        </nav>
+
+        <div class="content-inside">
+
+            <div id="about" class="about">
+                <h2 id="about-header">ABOUT</h2>
+                <div class="about-text-box">
+                    <p>
+                        Hi! My name is Tõnis Põld and I am a bachelor of science in engineering at Tallinna Ülikool who is looking for job opportunities to kickstart my career.
+                        I am born and raised in Rakvere and for the past couple of years I've lived in Tallinn. I am a sports enthusiast who mainly plays football, tennis, discgolf and in the winter I ski.
+                        <br>
+                        <br>
+                        My love for web development comes from the need to create something for other people to use.
+                        As of lately, I've graduated university and have independently started to learn more about web development, graphical design and software programming. Now, I'd like to put my skills to real use.
+                    </p>
+                </div>
+                <div class="pictures">
+                    <img class="second-img" src="images/maesuusk_1.jpeg">
+                    <img class="main-img" src="images/lopetamine.jpg">
+                    <img class="second-img" src="images/murdmaa_suusk.jpeg">
+                </div>
+                <div class="pictures-mobile">
+                    <img src="images/pictures_mobile.png">
+                </div>
+            </div>
+            
+            <div id="portfolio" class="portfolio">
+                <h2 id="portfolio-header">PORTFOLIO</h2>
+                <div class="portfolio-grid">
+                    <div class="grid-item first">
+                        <div class="inline">
+                            <a href="banner/banner.html" target="_blank">
+                                <h3>HTML5 Banners</h3>
+                                <img src="images/portfolio_banner.gif">
+                            </a>
+                            <p><span id="dots-first"></span><span id="more-first">Such banners i developed during my internship at häk digital marketing agency. The banners and the animations were different depending on the campaign.
+                            These banners were developed with HTML, Sass and Javascript.</span></p>
+                            <button onclick="readMoreFirst()" id="firstBtn" class="button">Read more</button>
+                        </div>
+                    </div>
+                    <div class="grid-item second">
+                        <div class="inline">
+                            <a href="https://www.figma.com/design/ew13YTJyvRoCiCItFMTF19/L%C3%B5put%C3%B6%C3%B6-protot%C3%BC%C3%BCp?node-id=0-1&t=lMi9n6R9sSNwdSu3-1" target="_blank">
+                                <h3>Retail company Meie toidukaubad websites rebranding</h3>
+                                <img src="images/portfolio_meie.gif">
+                            </a>
+                            <p><span id="dots-second"></span><span id="more-second">This rebranding was done as my bachelors thesis. I am associated with one of the owners of this company and I knew they didn't want anyting flashy and new.
+                              Bearing that in mind I tried not to do a total rebranding, but rather a refresh to the website. This has not gone live and was done only for my bachelors thesis. Everything was done in Figma.</span></p>
+                            <button onclick="readMoreSecond()" id="secondBtn" class="button">Read more</button>
+                        </div>
+                      </div>
+                      <div class="grid-item third">
+                        <div class="inline">
+                            <a href="game/game.html" target="_blank">
+                                <h3>Fox and hounds minimax boardgame</h3>
+                                <img src="images/portfolio_game.gif">
+                            </a>
+                            <p><span id="dots-third"></span><span id="more-third">This game was made during my studies at Tallinna Ülikool. This game uses a minimax algorithm and the player plays against an AI. It was made with HTML, CSS and Javascript.</span></p>
+                            <button onclick="readMoreThird()" id="thirdBtn" class="button">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="skills" class="skills">
+                <h2 id="skills-header">SKILLS</h2>
+                <div class="skills-grid">
+                    <p>During my studies I have learned about many different coding languages, algorithms, databases and so on. Some, which I have learned more than the others, I've brought out in the picture beside.
+                        I am also fluent in both Estonian and English. I have strong communication skills and I am a quick learner.
+                    </p>
+                    <img src="images/skills.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
