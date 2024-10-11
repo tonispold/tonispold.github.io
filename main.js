@@ -1,4 +1,8 @@
+window.scrollTo(0, 0);
 
+setTimeout(() => {
+    document.documentElement.style.scrollBehavior = 'smooth';
+}, 2000);
 
 window.addEventListener('DOMContentLoaded', (event) => {
   document.body.classList.add('animate-bg');
